@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e55bc38f-f3be-4b02-8cc8-db9a52c5351e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/reading_business.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/reading_business.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/reading_business.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+            <state relative-caret-position="221">
+              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -370,18 +369,17 @@
       <workItem from="1550902702909" duration="20946000" />
       <workItem from="1551298334444" duration="20000" />
       <workItem from="1551298447759" duration="14128000" />
-      <workItem from="1551479390994" duration="16250000" />
+      <workItem from="1551479390994" duration="16512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76316000" />
+    <option name="totallyTimeSpent" value="76578000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47104248" weight="0.18218623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47104248" visible="true" weight="0.18218623" />
       <window_info id="Structure" order="1" sideWeight="0.52895755" side_tool="true" weight="0.18218623" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -394,7 +392,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49894625" weight="0.32502708" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5019889" side_tool="true" weight="0.24733096" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="10" sideWeight="0.49801114" visible="true" weight="0.18827708" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49801114" visible="true" weight="0.3534636" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -402,7 +400,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="3" sideWeight="0.5007452" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="4" sideWeight="0.49925485" weight="0.32955465" />
-      <window_info anchor="right" id="SciView" order="5" sideWeight="0.49925485" visible="true" weight="0.50121456" />
+      <window_info anchor="right" id="SciView" order="5" sideWeight="0.49925485" weight="0.50121456" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -568,8 +566,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/reading_business.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        <state relative-caret-position="221">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
