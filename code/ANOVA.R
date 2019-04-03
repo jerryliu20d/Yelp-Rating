@@ -76,23 +76,48 @@ FeatureImportance = data.frame(Attributes = c("NoiseLevel","RestaurantsDelivery"
                                ImpoScore = c(116,107,97,91,83,77,70,60,57,55,51,50,48,45,44,42,34,33,27,21,21,20,20,18,14,14,14,13,13,11,11,10,9,9,7,3,3,2,1))
 barplot(cumsum(FeatureImportance$ImpoScore[39:1]))
 
-#attr.nobus = data.frame(Attributes = colnames(attr)[3:90])
-
-for(i in 1:38){
-  col = attr[,which(colnames(attr)==FeatureImportance$Attributes[i])]
-  aov = aov(attr$stars~col)
-  FeatureImportance$anova.p[i] = summary(aov)[[1]][1,5]
+attr.all = data.frame(Attributes = colnames(attr)[3:90], anova.p=NA, ImpoScore=0)
+for(i in 3:90){
+  if(length(table(attr[i]))>1){
+    aov = aov(attr$stars~attr[,i])
+    attr.all$anova.p[i-2] = summary(aov)[[1]][1,5]
+  }
+  if(colnames(attr)[i]%in%FeatureImportance$Attributes) attr.all$ImpoScore[i-2] = FeatureImportance$ImpoScore[which(FeatureImportance$Attributes==colnames(attr)[i])]
+  attr.all$n.nonmiss[i-2] = sum(attr[,i]!="None")
 }
+attr.all = attr.all[order(attr.all$ImpoScore,decreasing = T),]
+attr.all$anova.p = signif(attr.all$anova.p,2)
+write.csv(attr.all, "./Documents/AMERICA/STUDY/4th semester/STAT628/Module2/Tables/Attributes_ANOVA.csv",row.names = F)
 
-aggregate(stars~NoiseLevel, data=attr, FUN=mean)
+plot(attr.all[attr.all$ImpoScore!=0,]$ImpoScore, -log10(attr.all[attr.all$ImpoScore!=0,]$anova.p), 
+     xlab = "Importance Level", ylab = "-log10(p) in ANOVA", main = "-log10(p) vs. Importance Level")
+model = lm(-log10(anova.p)~ImpoScore, data = attr.all, subset = attr.all$ImpoScore!=0)
+#abline(model, col="red")
+
+attr.selected = attr.all[which(attr.all$anova.p<=0.05/88 & attr.all$ImpoScore>50),]
+attr.selected
+write.csv(attr.selected,
+          "./Documents/AMERICA/STUDY/4th semester/STAT628/Module2/Tables/SelectedAttributes_ANOVA.csv",row.names = F)
+
+#================= spcific checks =====
+aggr = aggregate(stars~NoiseLevel, data=attr, FUN=mean)
+star.mean = aggr$stars[-3]
+names(star.mean) = aggr$NoiseLevel[-3]
+barplot(sort(star.mean), col = topo.colors(4,alpha = 0.3), main = "Noise Level", ylab = "Average Ratings")
 aov = aov(stars~NoiseLevel, data=attr)
 summary(aov)
 
-aggregate(stars~RestaurantsDelivery, data=attr, FUN=mean) #None
+aggr = aggregate(stars~RestaurantsDelivery, data=attr, FUN=mean) #None
+star.mean = aggr$stars
+names(star.mean) = aggr$RestaurantsDelivery
+barplot(sort(star.mean), col = topo.colors(4,alpha = 0.3), main = "RestaurantsDelivery", ylab = "Average Ratings")
 aov = aov(stars~RestaurantsDelivery, data=attr)
 summary(aov)
 
-aggregate(stars~BusinessAcceptsCreditCards, data=attr, FUN=mean) #None
+aggr = aggregate(stars~BusinessAcceptsCreditCards, data=attr, FUN=mean) #None
+star.mean = aggr$stars
+names(star.mean) = aggr$BusinessAcceptsCreditCards
+barplot(sort(star.mean), col = topo.colors(4,alpha = 0.3), main = "BusinessAcceptsCreditCards", ylab = "Average Ratings")
 aov = aov(stars~BusinessAcceptsCreditCards, data=attr)
 summary(aov)
 
