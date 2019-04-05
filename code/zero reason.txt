@@ -1,0 +1,19 @@
+food:
+food£¬dish£¬stodgy£¬tasteless£¬cold£¬buffet£¬tasting£¬pork£¬shrimp£¬raw£¬fish£¬
+hard£¬edible£¬food£¬egg£¬burnt£¬cooked£¬spam£¬vegetarian£¬soup£¬wonton£¬rice£¬
+chicken£¬noodles£¬salty£¬taste£¬oil£¬veggies£¬spicies£¬drink£¬beef£¬rubbery£¬
+edible£¬tasting£¬watery£¬vegetables£¬meat£¬tasted£¬tasteless£¬Dumplings£¬rolls£¬
+main£¬soggy£¬flavorless£¬saltier£¬sauce£¬hot£¬warm£¬spicy£¬bland£¬sweet£¬tofu£¬
+garlic£¬thin£¬mush£¬sake£¬sea£¬sushi£¬
+wait:
+reservation£¬wait£¬30min£¬hours£¬ready£¬busy£¬6-10 mins£¬sat£¬15 mins£¬seated£¬
+seat£¬minutes£¬slow£¬10:00 am£¬hour£¬fast£¬
+service:
+served£¬again£¬refuse£¬untrained£¬lazy£¬waitress£¬rude£¬manager£¬attitude£¬
+accuse£¬language£¬miserable£¬angry£¬uncomfortable£¬service£¬she£¬girl£¬
+waitress£¬waitresses£¬unprofessional£¬cook£¬careless
+price:
+pay£¬$£¬$1.00£¬payment£¬cheaepr£¬$40£¬prices£¬three dollars£¬money£¬
+paid£¬extra£¬worth£¬cost£¬25 dollars£¬
+cleaness£º
+safety£¬clean£¬bugs£¬cockroach£¬dirty£¬nasty£¬roaches£¬nasty£¬
